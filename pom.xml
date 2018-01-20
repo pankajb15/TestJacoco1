@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 	<properties>
 		<sonar.core.codeCoveragePlugin> jacoco </sonar.core.codeCoveragePlugin>
-		<sonar.jacoco.reportPath> $ {} /../ project.basedir target / jacoco.exec </sonar.jacoco.reportPath>
+		<sonar.jacoco.reportPath> $ {WORKSPACE}/target/jacoco.exec </sonar.jacoco.reportPath>
 		<sonar.language> java </sonar.language>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
