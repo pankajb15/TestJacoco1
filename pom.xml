@@ -37,23 +37,23 @@
 				<groupId> org.jacoco </groupId>
 				<artifactId> jacoco-maven-plugin </artifactId>
 				<version> 0.7.2.201409121644 </version>
-				<Configuration>
+				<configuration>
 					<append> true </append>
-				</Configuration>
-				<Executions>
-					<Execution>
-						<Goals>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
 							<goal> prepare-agent </goal>
-						</Goals>
-					</Execution>
-					<Execution>
+						</goals>
+					</execution>
+					<execution>
 						<id> Post-unit-test </id>
-						<Phase> test </Phase>
-						<Goals>
+						<phase> test </phase>
+						<goals>
 							<goal> report </goal>
-						</Goals>
-					</Execution>
-				</Executions>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
