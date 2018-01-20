@@ -6,7 +6,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
-    
+    <properties>
+     <Sonar.core.codeCoveragePlugin> jacoco </sonar.core.codeCoveragePlugin>
+     <Sonar.jacoco.reportPath> $ {} /../ project.basedir target / jacoco.exec </sonar.jacoco.reportPath>
+     <Sonar.language> java </sonar.language>
+    </properties>
     
     <dependencies>
         <dependency>
@@ -23,14 +27,14 @@
         </dependency>
     </dependencies>
     
-    <Build>
-  <Plugins>
-    <Plugin>
+    <build>
+  <plugins>
+    <plugin>
       <GroupId> org.apache.maven.plugins </ groupId>
       <ArtifactId> maven-surefire-plugin </ artifactId>
       <Version> 2.18.1 </ Version>
-    </ Plugin>
-    <Plugin>
+    </ plugin>
+    <plugin>
       <GroupId> org.jacoco </ groupId>
       <ArtifactId> jacoco-maven-plugin </ artifactId>
       <Version> 0.7.2.201409121644 </ Version>
@@ -51,9 +55,9 @@
           </ Goals>
         </ Execution>
       </ Executions>
-    </ Plugin>
-  </ Plugins>
-</ Build>
+    </ plugin>
+  </ plugins>
+</ build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
