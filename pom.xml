@@ -11,7 +11,7 @@
      <Sonar.core.codeCoveragePlugin> jacoco </sonar.core.codeCoveragePlugin>
      <Sonar.jacoco.reportPath> $ {} /../ project.basedir target / jacoco.exec </sonar.jacoco.reportPath>
      <Sonar.language> java </sonar.language>
-    </ Properties>
+    </Properties>
     
     
     <dependencies>
